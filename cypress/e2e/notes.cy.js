@@ -16,6 +16,8 @@ describe('template spec', () => {
   })
 })
 it("Note creation", () => {
+  //J'ai créé commande perso `getNotesApi`, le bout de code j'ai mis dans le fichier `commands.js`
+  //J'ai créé Jeux de Données dans le fichier `notesbody`et j'ai mis dedant le tableau de body. Puis je l'appelle avec la méthode `body: notesbody` 
   cy.getNotesApi().then((response) => {
     expect(response.status).to.eql(200); 
   })
